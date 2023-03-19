@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
-  <header>
-    <a href="" className="logo">
-      TechBlog
-    </a>
-    <nav>
-      <a href="">Login</a>
-      <a href="">Register</a>
-    </nav>
-  </header>;
+  return (
+    <header>
+      <Link to="/" className="logo">
+        TechBlog
+      </Link>
+      <nav>
+        <Link to="/login">Login</Link>
+        <Link to="/register">Register</Link>
+      </nav>
+    </header>
+  );
 }
