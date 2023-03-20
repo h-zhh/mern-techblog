@@ -13,7 +13,7 @@ export default function RegisterPage() {
     if (response.status === 200) {
       alert("Registration successful");
     } else {
-      alert("Registration failed");
+      alert("Registration failed, try again");
     }
   }
   return (
